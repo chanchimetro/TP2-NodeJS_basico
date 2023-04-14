@@ -9,5 +9,8 @@
     "start": "index.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "country-to-currency": "^1.0.8"
+  }
 }

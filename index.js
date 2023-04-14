@@ -2,8 +2,7 @@ import { concatInvert } from './manejo-strings.js';
 import {sumar, restar, dividir, multiplicar, pi} from './matematica.js';
 import { Alumno } from './models/alumno.js';
 import { copiar } from './filerw.js';
-
-
+import { obtenerMoneda } from './monedita.js';
 
 console.log("Ej1:");
 let string1 = "Ari";
@@ -27,3 +26,9 @@ alumno2.mostrar();
 
 console.log("\nEj 4:");
 copiar("./entrada.txt", "./salida.txt");
+
+console.log("\nEj 7:");
+let moneda, codigoPais;
+codigoPais = 'AR';
+moneda = obtenerMoneda(codigoPais);
+console.log('La moneda de ' + codigoPais + ' es ' + moneda);
