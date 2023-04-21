@@ -12,11 +12,11 @@ console.log(`Strings de entrada: ${string1} ${string2}`);
 console.log(`Strings inversos: ${inverseStr}`);
 
 console.log("\nEj 2:")
-console.log('1+7= ' + sumar(1,7));
-console.log('9-2=' + restar(9,2));
-console.log('4/2=' + dividir(4,2));
-console.log('6*6=' + multiplicar(6,6));
-console.log('pi=' + pi);
+console.log('1 + 7 = ' + sumar(1,7));
+console.log('9 - 2 = ' + restar(9,2));
+console.log('4 / 2 = ' + dividir(4,2));
+console.log('6 * 6 = ' + multiplicar(6,6));
+console.log('pi = ' + pi);
 
 console.log("\nEj 3:")
 let alumno1 = new Alumno(12345678, "IvozzSkills");
@@ -25,6 +25,7 @@ alumno1.mostrar();
 alumno2.mostrar();
 
 console.log("\nEj 4:");
+console.log("Se ejecuto la funcion!");
 copiar("./entrada.txt", "./salida.txt");
 
 console.log("\nEj 7:");

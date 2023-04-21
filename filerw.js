@@ -5,7 +5,7 @@ export function copiar(path1, path2){
         if(error){
             console.log("Error", error);
         } else {
-            console.log("archivo creado! :D");
+            console.log("\narchivo creado! :D (del ej. 4)");
         }
     })
 }
