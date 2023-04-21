@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "country-to-currency": "^1.0.8"
+    "country-to-currency": "^1.0.8",
+    "mssql": "^9.1.1"
   }
 }

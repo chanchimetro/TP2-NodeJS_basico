@@ -4,7 +4,7 @@ import { Alumno } from './models/alumno.js';
 import { copiar } from './filerw.js';
 import { parsearUrl } from './url.js';
 import { obtenerMoneda } from './monedita.js';
-import config from "../TP2-NodeJS_basico/dbconfig.js/index.js";
+import config from "./dbconfig.js";
 import sql from 'mssql';
 
 console.log("Ej1:");
