@@ -4,6 +4,8 @@ import { Alumno } from './models/alumno.js';
 import { copiar } from './filerw.js';
 import { parsearUrl } from './url.js';
 import { obtenerMoneda } from './monedita.js';
+import config from "../TP2-NodeJS_basico/dbconfig.js/index.js";
+import sql from 'mssql';
 
 console.log("Ej1:");
 let string1 = "Ari";
@@ -42,3 +44,12 @@ let moneda, codigoPais;
 codigoPais = 'AR';
 moneda = obtenerMoneda(codigoPais);
 console.log('La moneda de ' + codigoPais + ' es ' + moneda);
+
+console.log("\nEj 8:");
+let pool = await sql.connect(config)
+let result = await pool.request().query("SELECT * from Pizzas");
+
+console.log(result.recordsets.length)
+result.recordsets[0].forEach(element => {
+    console.log(element)
+});
