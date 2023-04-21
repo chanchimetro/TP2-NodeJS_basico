@@ -2,6 +2,7 @@ import { concatInvert } from './manejo-strings.js';
 import {sumar, restar, dividir, multiplicar, pi} from './matematica.js';
 import { Alumno } from './models/alumno.js';
 import { copiar } from './filerw.js';
+import { parsearUrl } from './url.js';
 import { obtenerMoneda } from './monedita.js';
 
 console.log("Ej1:");
@@ -27,6 +28,14 @@ alumno2.mostrar();
 console.log("\nEj 4:");
 console.log("Se ejecuto la funcion!");
 copiar("./entrada.txt", "./salida.txt");
+
+console.log("\nEj 5:");
+let url = "http://localhost:8080/default.htm?year=2017&month=february";
+console.log(parsearUrl(url));
+
+console.log("\nEj 6:");
+let url2 = 4;
+console.log(parsearUrl(url2));
 
 console.log("\nEj 7:");
 let moneda, codigoPais;
