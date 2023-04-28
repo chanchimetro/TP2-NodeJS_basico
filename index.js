@@ -47,13 +47,5 @@ moneda = obtenerMoneda(codigoPais);
 console.log('La moneda de ' + codigoPais + ' es ' + moneda);
 
 console.log("\nEj 8:");
-//let pool = await sql.connect(config)
-//let result = await pool.request().query("SELECT * from Pizzas");
-
-/*console.log(result.recordsets.length)
-result.recordsets[0].forEach(element => {
-    console.log(element)
-});*/
-console.log("--------------------------------------------------------");
-
-console.log(getById(0));
+let pizza = await getById(1);
+console.log(pizza);

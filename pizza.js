@@ -4,7 +4,6 @@ import config from './dbconfig.js'
 export const getById  = async (id) => {
     
     let returnEntity = null;
-    console.log("GetById");
     try{
         let pool = await sql.connect(config);
         let result = await pool.request()
@@ -12,7 +11,6 @@ export const getById  = async (id) => {
             .query('SELECT * FROM Pizzas WHERE id = @pId');
 
             returnEntity = result.recordsets[0][0];
-
     }catch (error){
         console.log(error);
     }
